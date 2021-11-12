@@ -104,9 +104,7 @@ ul {
 }
 
 .line {
-  border-bottom-width: 1px;
-  border-bottom-color: #ececec;
-  border-bottom-style: solid;
+  border: 1px solid #ececec;
 }
 
 /*  навигация сайта */
@@ -162,6 +160,8 @@ ul {
 /* button */
 
 .button.primary {
+  padding: 10px 32px;
+  font-weight: 700;
   background-color: var(--accent-color);
   color: var(--accent-whiter-color);
   font-family: inherit;
@@ -198,6 +198,7 @@ ul {
 }
 
 .advantage {
+  width: 25%;
   margin-left: 30px;
 }
 
@@ -219,9 +220,13 @@ ul {
   line-height: 1.7;
 }
 
+.not-padding {
+  padding-bottom: 0;
+}
+
 /* Заголовки */
 .headline {
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 
   font-size: 36px;
   line-height: 1.16;
@@ -255,12 +260,10 @@ ul {
 }
 
 .com-img {
-  padding-bottom: 30px;
 }
 
 .list {
-  padding-bottom: 10px;
-
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -272,52 +275,65 @@ ul {
   line-height: 1.19;
 }
 
+.command-text {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
 /* Портфолио */
+
+.pf-main {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.pf-list {
+  margin-bottom: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .portfolio-title {
-  padding-bottom: 4px;
+  margin-bottom: 4px;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 
 .portfolio-text {
-  padding-bottom: 20px;
   color: var(--title-text-color);
   font-size: 16px;
   line-height: 1.87;
 }
 
-.pf-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.pf-main {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .port-hd {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
   display: flex;
   flex-wrap: wrap;
-  padding-top: 34px;
+  margin-left: -30px;
+  margin-bottom: -30px;
+  padding: 0;
+  list-style: none;
+  justify-content: flex-end;
 }
 
 .port-hd-list {
+  width: inherit;
   margin-left: 30px;
   margin-bottom: 30px;
+  flex-basis: calc((100% - 30) / 3);
 }
 
 .port-hd-list:nth-child(3n + 1) {
   margin-left: 0;
 }
 
+.port-hd-blok {
+  padding: 20px 24px;
+}
 .port-img {
-  padding-bottom: 20px;
+  margin: 0;
+  padding: 0;
 }
 /* Подвал */
 .footer-title {
@@ -330,7 +346,7 @@ ul {
 }
 
 .footer-li {
-  padding-bottom: 9px;
+  margin-bottom: 9px;
 }
 .ad-list {
   color: var(--accent-whiter-color);
