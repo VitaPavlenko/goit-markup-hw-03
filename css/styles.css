@@ -314,22 +314,27 @@ ul {
   margin-bottom: -30px;
   padding: 0;
   list-style: none;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .port-hd-list {
   width: inherit;
   margin-left: 30px;
   margin-bottom: 30px;
-  flex-basis: calc((100% - 30) / 3);
+  flex-basis: calc((100% - 90px) / 3);
 }
 
 .port-hd-list:nth-child(3n + 1) {
-  margin-left: 0;
+  margin-left: 0px;
 }
 
-.port-hd-blok {
-  padding: 20px 24px;
+.port-hd-list:nth-child(5) {
+
+}
+
+
+/* .port-hd-blok { */
+  margin-left: 30px;
 }
 .port-img {
   margin: 0;
