@@ -103,8 +103,10 @@ ul {
   color: var(--accent-whiter-color);
 }
 
-.line {
-  border: 1px solid #ececec;
+.border {
+  border-bottom: 1px solid #ececec;
+  border-left: 1px solid #ececec;
+  border-right:1px solid #ececec;
 }
 
 /*  навигация сайта */
@@ -138,11 +140,14 @@ ul {
   color: var(--accent-color);
 }
 
+.container-header {
+  border-bottom: 1px solid #ececec;
+}
+
 /* Герой */
 
 .hero-title {
-  padding-bottom: 30px;
-
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
@@ -288,7 +293,7 @@ ul {
   padding-bottom: 94px;
 }
 .pf-list {
-  margin-bottom: 34px;
+  margin-bottom: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -324,19 +329,15 @@ ul {
   flex-basis: calc((100% - 90px) / 3);
 }
 
-.port-hd-list:nth-child(3n + 1) {
+/* .port-hd-list:nth-child(3n + 1) { */
   margin-left: 0px;
 }
 
-.port-hd-list:nth-child(5) {
-
-}
-
-
-/* .port-hd-blok { */
-  margin-left: 30px;
+.port-hd-blok {
+  padding: 20px 24px;
 }
 .port-img {
+  display: block;
   margin: 0;
   padding: 0;
 }
